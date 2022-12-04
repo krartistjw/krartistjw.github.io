@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Java
-parent: Backend
+title: Git
 nav_order: 1
 ---
 
-# Java
+# Git

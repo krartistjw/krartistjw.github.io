@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Springboot
-parent: backend
+parent: Backend
 has_children: true
 nav_order: 2
 ---
