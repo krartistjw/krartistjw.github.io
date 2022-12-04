@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Java
-parent: Backend
+parent: backend
 nav_order: 1
 ---
 

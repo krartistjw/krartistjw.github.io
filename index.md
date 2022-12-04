@@ -6,12 +6,10 @@ description: "기술 블로그"
 permalink: /
 ---
 
-# Focus on writing good documentation
+# 개발 노트
 {: .fs-9 }
 
-
-개발 노트
-- MSA를 지향하는 JAVA(SpringBoot)
-- CloudNative DevOps
+MSA를 지향하는 JAVA(SpringBoot)
+CloudNative DevOps
 {: .fs-6 .fw-300 }
 

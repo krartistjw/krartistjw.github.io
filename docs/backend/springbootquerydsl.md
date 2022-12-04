@@ -1,7 +1,7 @@
 ---
 layout: default
 title: QueryDSL
-parent: Springboot
+parent: springboot
 nav_order: 3
 ---
 
