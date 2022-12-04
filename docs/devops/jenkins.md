@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Jenkins
-parent: devops
+parent: Devops
 nav_order: 2
 ---
 

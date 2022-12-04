@@ -1,7 +1,7 @@
 ---
 layout: default
 title: JPA
-parent: springboot
+parent: Springboot
 nav_order: 2
 ---
 

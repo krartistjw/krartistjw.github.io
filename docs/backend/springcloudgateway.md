@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gateway
-parent: springcloud
+parent: SpringCloud
 nav_order: 1
 ---
 

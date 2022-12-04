@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Git
-parent: devops
+parent: Devops
 nav_order: 1
 ---
 

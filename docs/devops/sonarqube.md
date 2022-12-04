@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sonarqube
-parent: devops
+parent: Devops
 nav_order: 3
 ---
 
