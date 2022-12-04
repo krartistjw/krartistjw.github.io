@@ -16,7 +16,7 @@
 title: 기술 블로그
 description: 기술 블로그
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://krartistjw.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://krartistjw.github.io"
 
 permalink: pretty
 
@@ -101,7 +101,7 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 # External navigation links
 nav_external_links:
   - title: Just the Docs on GitHub
-    url: https://github.com/just-the-docs/just-the-docs
+    url: https://github.com/krartistjw
 
 # Footer content
 # appears at the bottom of every page's main content
@@ -148,8 +148,8 @@ callouts:
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+#ga_tracking: UA-2709176-10
+#ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
   - jekyll-seo-tag
