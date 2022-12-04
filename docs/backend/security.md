@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Security
+title: SpringbootSecurity
 parent: Springboot
 nav_order: 1
 ---
