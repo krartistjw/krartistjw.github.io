@@ -1,8 +1,8 @@
 ---
 layout: default
-title: homebrew 설치
 parent: homebrew
 nav_order: 1
+title: homebrew 설치
 ---
 
 # Homebrew
