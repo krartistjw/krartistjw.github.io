@@ -1,7 +1,7 @@
 ---
 layout: default
 has_children: true
-parent: macos
+parent: Mac OS
 nav_order: 4
 title: homebrew
 ---
