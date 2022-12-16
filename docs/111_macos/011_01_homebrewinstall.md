@@ -17,17 +17,23 @@ nav_order: 1
 ## 설치
 
 1. 터미널 실행
-![terminal1](../../assets/images/homebrew1.png)
 
-1. Install 명령어 실행
+![terminal1](../../assets/images/111_macos/homebrew1.png)
+
+
+2. Install 명령어 실행
+
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-![terminal2](../../assets/images/homebrew2.png)
+![terminal2](../../assets/images/111_macos/homebrew2.png)
 
 
-1. Mac 로그인에 사용되는 비밀번호 입력
 
-![terminal1](../../assets/images/homebrew3.png)
+3. Mac 로그인에 사용되는 비밀번호 입력
 
-1. Homebrew 설치 완료
-![terminal1](../../assets/images/homebrew4.png)
+![terminal1](../../assets/images/111_macos/homebrew3.png)
+
+
+4. Homebrew 설치 완료
+
+![terminal1](../../assets/images/111_macos/homebrew4.png)
