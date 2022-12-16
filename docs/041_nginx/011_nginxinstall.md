@@ -5,4 +5,4 @@ title: Nginx 설치
 nav_order: 1
 ---
 
-# Nginx Install
+# Nginx 설치
