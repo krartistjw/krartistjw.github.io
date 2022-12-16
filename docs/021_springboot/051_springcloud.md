@@ -1,9 +1,9 @@
 ---
 layout: default
-title: SpringCloud
-parent: Backend
+parent: Springboot
+title: Spring Cloud
 has_children: true
-nav_order: 3
+nav_order: 51
 ---
 
 # Spring Cloud

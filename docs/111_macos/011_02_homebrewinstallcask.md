@@ -1,8 +1,9 @@
 ---
 layout: default
+grand_parent: Mac OS
 parent: homebrew
-nav_order: 2
 title: homebrew cask 설치
+nav_order: 2
 ---
 
 # Homebrew

@@ -1,8 +1,9 @@
 ---
 layout: default
+grand_parent: Mac OS
 parent: homebrew
-nav_order: 2
 title: homebrew 업데이트
+nav_order: 3
 ---
 
 # Homebrew

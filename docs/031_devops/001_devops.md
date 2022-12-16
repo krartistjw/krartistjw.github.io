@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Devops
-permalink: /docs/devops
 has_children: true
-nav_order: 3
+nav_order: 31
+permalink: /docs/devops
 ---
 
 # Devops

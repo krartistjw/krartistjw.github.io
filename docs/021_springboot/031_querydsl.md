@@ -1,8 +1,8 @@
 ---
 layout: default
-title: JPA
 parent: Springboot
-nav_order: 2
+title: QueryDSL
+nav_order: 31
 ---
 
-# Springboot JPA
+# QueryDSL
