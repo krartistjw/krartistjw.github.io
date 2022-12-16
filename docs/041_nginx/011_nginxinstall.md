@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Nignx
+parent: Nginx
 title: Nginx 설치
 nav_order: 1
 ---
