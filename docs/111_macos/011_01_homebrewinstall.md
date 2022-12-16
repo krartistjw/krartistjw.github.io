@@ -9,11 +9,13 @@ nav_order: 1
 # Homebrew
 
 ## Homebrew 란?
-터미널 CLI(Command-line interface) 환경에서 명령어를 작성하여 손쉽게 프로그램을 설치, 업데이트, 삭제 등을 할 수 있도록 도와주는 도구이다.
+
+- 터미널 CLI(Command-line interface) 환경에서 명령어를 작성하여 손쉽게 프로그램을 설치, 업데이트, 삭제 등을 할 수 있도록 도와주는 도구이다.
 
 
 
 ## 사전정보
+
 - Homebrew 공식 페이지: https://brew.sh/index_ko
 
 
@@ -21,7 +23,9 @@ nav_order: 1
 ## 설치
 
 1. 터미널 실행 
+
    ![terminal1](../../assets/images/111_macos/homebrew1.png)
+
 
 2. Install 명령어 실행
    
