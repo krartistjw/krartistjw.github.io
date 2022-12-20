@@ -80,10 +80,8 @@ docker-compose -f /app/docker-compose-jenkins.yml
 
 1. 브라우저 접속
 
-
 2. 서버에서 초기 관리자 암호 확인 후 입력
 `cat /app/jenkins/secrets/initialAdminPassword`
-
 ![install1](../../assets/images/061_jenkins/install1.jpg)
 
 
