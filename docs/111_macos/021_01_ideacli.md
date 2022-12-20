@@ -1,8 +1,8 @@
 ---
 layout: default
-grand_parent: Intellij
-parent: Intellij Setting
-title: 명령어로 실행
+grand_parent: Mac OS
+parent: Intellij
+title: 터미널에서 명령어로 실행
 has_children: true
 nav_order: 1
 ---
