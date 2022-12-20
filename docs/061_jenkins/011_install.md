@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: Devops
-title: Jenkins 설치(Install)
+parent: Jenkins
+title: Jenkins Install
 has_children: true
 nav_order: 1
 ---
