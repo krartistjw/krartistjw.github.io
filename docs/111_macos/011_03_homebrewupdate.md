@@ -1,14 +1,12 @@
 ---
 layout: default
 grand_parent: Mac OS
-parent: homebrew
+parent: Homebrew
 title: homebrew 업데이트
 nav_order: 3
 ---
 
-# Homebrew
-
-## Homebrew 업데이트
+# Homebrew 업데이트
 
 - Homebrew 패키지를 설치하기 전 혹은 Homebrew로 설치된 프로그램을 업데이트 할 때는 Homebrew 업데이트 명령어로 설치
 
