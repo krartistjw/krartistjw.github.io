@@ -2,12 +2,12 @@
 layout: default
 grand_parent: Mac OS
 parent: Intellij
-title: 터미널에서 명령어로 실행
+title: 터미널에서 실행
 has_children: true
 nav_order: 1
 ---
 
-# 터미널에서 명령어로 Intellij 실행(Mac Os) : `idea .`
+# Intellij 터미널에서 Cli(명령어)로 실행(Mac Os)
 
 
 ## Intellij 실행
