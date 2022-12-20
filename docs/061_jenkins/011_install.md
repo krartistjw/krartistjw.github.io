@@ -2,7 +2,6 @@
 layout: default
 parent: Jenkins
 title: Jenkins Install
-has_children: true
 nav_order: 1
 ---
 
