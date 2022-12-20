@@ -84,7 +84,7 @@ docker-compose -f /app/docker-compose-jenkins.yml
 2. 서버에서 초기 관리자 암호 확인 후 입력
 `cat /app/jenkins/secrets/initialAdminPassword`
 
-![install1](../../assets/images/061_jenkins/insta1.jpg)
+![install1](../../assets/images/061_jenkins/install1.jpg)
 
 
 3. 관리자 계정 생성
