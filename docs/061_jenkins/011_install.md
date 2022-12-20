@@ -52,7 +52,7 @@ nav_order: 1
 
 
 2. docker-compose 폴더 생성
-```
+```shell
 # /app 디렉토리로 이동
 > cd /app 
 
@@ -66,7 +66,7 @@ nav_order: 1
 
 
 4. yml 작성
-```
+```shell
 # 추후 작성
 ```
 
@@ -81,7 +81,9 @@ docker-compose -f /app/docker-compose-jenkins.yml
 1. 브라우저 접속
 
 2. 서버에서 초기 관리자 암호 확인 후 입력
+
 `cat /app/jenkins/secrets/initialAdminPassword`
+
 ![install1](../../assets/images/061_jenkins/install1.jpg)
 
 
