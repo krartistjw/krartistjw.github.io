@@ -23,12 +23,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
 ```
-
 ![orm](../../assets/images/031_orm/jpa02.png)
 
 
 ## Application.yml 설정
-- Datasour: h2
+- Datasource: h2
 - JPA는 ddl-auto: create를 사용하여 어플리케이션 실행 시 자동으로 Domain에 선언된 객체를 참조하여 Database Table 및 컬럼을 생성한다
 
 ```yaml
@@ -126,7 +125,7 @@ public class UsersController {
 ```
 
 ### 저장
-- `@PostMapping("/users")`를 선언하여 Post 방식으로 http://{{domain}}/users를 호출할 것을 명시
+- `@PostMapping("/users")`를 선언하여 Post 방식으로 http://{domain}/users를 호출할 것을 명시
 - usersService의 save 메소드를 호출
 
 ```java
@@ -145,7 +144,7 @@ public class UsersController {
 ```
 
 ### 목록 조회
-- `@GetMapping("/users")`를 선언하여 Get 방식으로 http://{{domain}}/users를 호출할 것을 명시
+- `@GetMapping("/users")`를 선언하여 Get 방식으로 http://{domain}/users를 호출할 것을 명시
 - usersService의 getList 메소드를 호출
 
 ```java
@@ -166,7 +165,7 @@ public class UsersController {
 
 
 ### 상세 조회
-- `@GetMapping("/users/{id}")`를 선언하여 Get 방식으로 http://{{domain}}/users/{{사용자ID}}를 호출할 것을 명시
+- `@GetMapping("/users/{id}")`를 선언하여 Get 방식으로 http://{domain}/users/{사용자ID}를 호출할 것을 명시
 - usersService의 getOne 메소드를 호출
 
 ```java
@@ -187,7 +186,7 @@ public class UsersController {
 
 
 ### 수정
-- `@PutMapping("/users")`를 선언하여 Put 방식으로 http://{{domain}}/users/{{사용자ID}}를 호출할 것을 명시
+- `@PutMapping("/users")`를 선언하여 Put 방식으로 http://{domain}/users/{사용자ID}를 호출할 것을 명시
 - usersService의 update 메소드를 호출
 
 ```java
@@ -210,7 +209,7 @@ public class UsersController {
 
 
 ### 삭제
-- `@DeleteMapping("/users/{id}")`를 선언하여 Delete 방식으로 http://{{domain}}/users/{{사용자ID}}를 호출할 것을 명시
+- `@DeleteMapping("/users/{id}")`를 선언하여 Delete 방식으로 http://{domain}/users/{사용자ID}를 호출할 것을 명시
 - usersService의 delete 메소드를 호출
 
 ```java
