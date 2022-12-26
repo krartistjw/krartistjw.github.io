@@ -277,6 +277,7 @@ public class UsersService {
 ### 목록 조회
 - `findAll`을 실행하여 Users 리스트를 조회한다.
 - `select * from users`와 동일한 결과를 출력한다.
+
 ```java
 @RequiredArgsConstructor
 @Service
