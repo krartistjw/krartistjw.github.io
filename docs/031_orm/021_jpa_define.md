@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: ORM
-title: JPA 설치
+title: JPA 소개
 nav_order: 21
 ---
 
