@@ -236,6 +236,7 @@ public class UsersController {
 ### 서비스 설정
 - `@Service`를 선언하여 rest api에서 비즈니스 로직을 처리하는 클래스임을 명시.
 - 생성자 주입방식으로 UsersRepository를 참조
+
 ```java
 @RequiredArgsConstructor
 @Service
