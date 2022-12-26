@@ -316,6 +316,7 @@ public class UsersService {
 
 ### 삭제
 - `deleteById`을 실행하여 DTO에서 넘겨받은 ID를 삭제한다.
+
 ```java
 @RequiredArgsConstructor
 @Service
