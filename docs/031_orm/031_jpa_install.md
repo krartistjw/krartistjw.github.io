@@ -166,7 +166,7 @@ public class UsersController {
 
 ### 상세 조회
 - `@GetMapping("/users/{id}")`를 선언하여 Get 방식으로 http://{domain}/users/{사용자ID}를 호출할 것을 명시
-- usersService의 getOne 메소드를 호출
+- usersService의 findById 메소드를 호출
 
 ```java
 @RequiredArgsConstructor
@@ -187,7 +187,7 @@ public class UsersController {
 
 ### 수정
 - `@PutMapping("/users")`를 선언하여 Put 방식으로 http://{domain}/users/{사용자ID}를 호출할 것을 명시
-- usersService의 update 메소드를 호출
+- usersService의 save 메소드를 호출
 
 ```java
 @RequiredArgsConstructor
