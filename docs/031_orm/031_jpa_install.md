@@ -14,7 +14,7 @@ nav_order: 31
 - controller: Rest API 선언부
 - service: 비즈니스 로직 구현
 
-<img src="../../assets/images/031_orm/jpa01.png" width="250px">
+<img src="https://krartistjw.github.io/assets/images/031_orm/jpa01.png" width="250px">
 
 ## build.gradle 설정
 - JPA 라이브러리 선언
