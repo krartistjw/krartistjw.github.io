@@ -1,12 +1,12 @@
 ---
 layout: default
 grand_parent: Mac OS
-parent: homebrew
-title: homebrew 설치
+parent: Homebrew
+title: Homebrew 설치
 nav_order: 1
 ---
 
-# Homebrew
+# Homebrew 설치
 
 ## Homebrew 란?
 
