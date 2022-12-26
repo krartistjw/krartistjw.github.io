@@ -348,5 +348,5 @@ public class UsersService {
 ![orm](../../assets/images/031_orm/jpa09.png)
 
 ## Github 링크
-`002-init-jpa` 브랜치
-[springboot-orm](https://github.com/krartistjw/springboot-orm.git)
+- Git Repo URL: [springboot-orm](https://github.com/krartistjw/springboot-orm.git)
+- 브랜치: `002-init-jpa` 
