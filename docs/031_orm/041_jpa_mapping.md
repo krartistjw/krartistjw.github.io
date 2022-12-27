@@ -355,13 +355,13 @@ public class UsersService {
 
 ### 그룹 목록 조회
 - 그룹 목록 조회에서 `backend developer`가 삭제된 것 확인
-![orm](../../assets/images/031_orm/jpamapping15.png)
+![orm](../../assets/images/031_orm/jpamapping16.png)
 
 
 ### 사용자 목록 조회
 - `backend developer` 그룹 삭제로 사용자 `kebin`이 삭제되지 않았는지 확인
 
-![orm](../../assets/images/031_orm/jpamapping16.png)
+![orm](../../assets/images/031_orm/jpamapping17.png)
 
 
 ## Github 링크
