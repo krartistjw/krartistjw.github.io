@@ -339,7 +339,7 @@ public class UsersService {
 ![orm](../../assets/images/031_orm/jpamapping13.png)
 
 
-### 그룹 목록 조회
+### 그룹 상세 조회
 - `ux designer` 그룹 상세 조회에서 `alex`가 삭제된 것 확인
 
 ![orm](../../assets/images/031_orm/jpamapping14.png)
@@ -351,10 +351,12 @@ public class UsersService {
 
 ![orm](../../assets/images/031_orm/jpamapping15.png)
 
+
+
 ### 그룹 목록 조회
 - 그룹 목록 조회에서 `backend developer`가 삭제된 것 확인
+![orm](../../assets/images/031_orm/jpamapping15.png)
 
-![orm](../../assets/images/031_orm/jpamapping16.png)
 
 ### 사용자 목록 조회
 - `backend developer` 그룹 삭제로 사용자 `kebin`이 삭제되지 않았는지 확인
