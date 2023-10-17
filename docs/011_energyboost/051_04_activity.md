@@ -27,20 +27,13 @@ nav_order: 4
 
 #### 요청 URL
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-
 |HTTP 메서드|URL|
 |:---|:------|
 |GET|api.energyboostlab.com/workout/activity/|
 
 
 #### 파라미터
+
 |파라미터|타입|필수여부|설명|
 |----|---|---|------|
 |테스트|테스트|Y|테스트|
@@ -67,6 +60,7 @@ charset=UTF-8
 ```
 
 #### Return Code
+
 |구분|코드|내용|설명|
 |----|---|---|------|
 |성공|200|성공|OK|
@@ -81,11 +75,13 @@ charset=UTF-8
 운동 활동 기록 상세 조회 API 입니다.
 
 #### 요청 URL
+
 |HTTP 메서드|URL|
 |---|------|
 |GET|api.energyboostlab.com/workout/activity/{ID}|
 
 #### 파라미터
+
 |파라미터|타입|필수여부|설명|
 |----|---|---|------|
 |테스트|테스트|Y|테스트|
@@ -112,6 +108,7 @@ charset=UTF-8
 ```
 
 #### Return Code
+
 |구분|코드|내용|설명|
 |----|---|---|------|
 |성공|200|성공|OK|
@@ -127,11 +124,13 @@ charset=UTF-8
 운동 활동 기록 생성 API 입니다.
 
 #### 요청 URL
+
 |HTTP 메서드|URL|
 |---|------|
 |POST|api.energyboostlab.com/workout/activity/|
 
 #### 파라미터
+
 |파라미터|타입|필수여부|설명|
 |----|---|---|------|
 |테스트|테스트|Y|테스트|
@@ -158,6 +157,7 @@ charset=UTF-8
 ```
 
 #### Return Code
+
 |구분|코드|내용|설명|
 |----|---|---|------|
 |성공|200|성공|OK|
@@ -173,11 +173,13 @@ charset=UTF-8
 운동 활동 기록 수정 API 입니다.
 
 #### 요청 URL
+
 |HTTP 메서드|URL|
 |---|------|
 |PUT|api.energyboostlab.com/workout/activity/{ID}|
 
 #### 파라미터
+
 |파라미터|타입|필수여부|설명|
 |----|---|---|------|
 |테스트|테스트|Y|테스트|
@@ -204,6 +206,7 @@ charset=UTF-8
 ```
 
 #### Return Code
+
 |구분|코드|내용|설명|
 |----|---|---|------|
 |성공|200|성공|OK|
@@ -219,11 +222,13 @@ charset=UTF-8
 운동 활동 기록 리스트 조회 API 입니다.
 
 #### 요청 URL
+
 |HTTP 메서드|URL|
 |---|------|
 |DELETE|api.energyboostlab.com/workout/activity/{ID}/|
 
 #### 파라미터
+
 |파라미터|타입|필수여부|설명|
 |----|---|---|------|
 |테스트|테스트|Y|테스트|
@@ -250,6 +255,7 @@ charset=UTF-8
 ```
 
 #### Return Code
+
 |구분|코드|내용|설명|
 |----|---|---|------|
 |성공|200|성공|OK|
