@@ -27,7 +27,7 @@ nav_order: 4
 
 #### 요청 URL
 |HTTP 메서드|URL|
-|---|------|
+|:---|:------|
 |GET|api.energyboostlab.com/workout/activity/|
 
 #### 파라미터
