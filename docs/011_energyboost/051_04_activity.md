@@ -26,9 +26,11 @@ nav_order: 4
 운동 활동 기록 리스트 조회 API 입니다.
 
 #### 요청 URL
+<div class="code-example" markdown="1">
 |HTTP 메서드|URL|
 |:---|:------|
 |GET|api.energyboostlab.com/workout/activity/|
+</div>
 
 #### 파라미터
 |파라미터|타입|필수여부|설명|
