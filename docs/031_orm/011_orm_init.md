@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: ORM
+# parent: ORM
+parent: Blog
 title: ORM 프로젝트 초기설정
 nav_order: 11
 ---

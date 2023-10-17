@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Blog
+# parent: Blog
 title: Devops
 has_children: true
 nav_order: 111

@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: ORM
+# parent: ORM
+parent: Blog
 title: JPA 소개
 nav_order: 21
 ---

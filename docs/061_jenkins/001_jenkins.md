@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Blog
+# parent: Blog
 title: Jenkins
 has_children: true
 nav_order: 61

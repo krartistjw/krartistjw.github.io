@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: ORM
+# parent: ORM
+parent: Blog
 title: JPA 설치
 nav_order: 31
 ---

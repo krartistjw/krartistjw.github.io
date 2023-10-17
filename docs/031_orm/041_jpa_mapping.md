@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: ORM
+# parent: ORM
+parent: Blog
 title: JPA 양방향 관계 맵핑
 nav_order: 41
 ---
