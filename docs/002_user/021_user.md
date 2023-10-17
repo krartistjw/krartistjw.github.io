@@ -1,9 +1,8 @@
 ---
 layout: default
-parent: EnergyboostAPI
 title: UserAPI
 has_children: true
-nav_order: 21
+nav_order: 11
 ---
 
 # 사용자 API

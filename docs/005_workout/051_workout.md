@@ -1,12 +1,11 @@
 ---
 layout: default
-grand_parent: EnergyboostAPI
-parent: NutritionAPI
-title: Ingredient
-nav_order: 2
+title: WorkoutAPI
+has_children: true
+nav_order: 51
 ---
 
-# 음식 재료 API
+# 운동 API
 
 ## 개요
 
@@ -18,28 +17,26 @@ nav_order: 2
 3. API 요청
 
 
-## 음식 재료 API 레퍼런스
+## 운동 API 레퍼런스
 
-### 음식 재료 리스트 조회
+### 운동 리스트 조회
 
 #### 설명
-음식 재료 리스트 조회 API 입니다.
+운동 리스트 조회 API 입니다.
 
 #### 요청 URL
-
 |HTTP 메서드|URL|
-|:---:|:------|
-|GET|api.energyboostlab.com/nutrition/ingredient/|
+|---|------|
+|GET|api.energyboostlab.com/workout/|
 
 #### 파라미터
-
 |파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
+|----|---|---|------|
 |테스트|테스트|Y|테스트|
 
 #### Request Example
 ```javascript
-GET /nutrition/ingredient/ HTTP/1.1
+GET /workout/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -59,35 +56,32 @@ charset=UTF-8
 ```
 
 #### Return Code
-
 |구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
+|----|---|---|------|
 |성공|200|성공|OK|
 |실패|401|권한 없음|API 사용 권한이 없습니다|
 ||403|비정상 접근|잘못된 요청입니다|
 ||404|존재하지 않은 요청|존재하지 않은 요청입니다|
 ||500|시스템 에러|테스트|
 
-### 음식 재료 상세 조회
+### 운동 상세 조회
 
 #### 설명
-음식 재료 상세 조회 API 입니다.
+운동 상세 조회 API 입니다.
 
 #### 요청 URL
-
 |HTTP 메서드|URL|
-|:---:|:------|
-|GET|api.energyboostlab.com/nutrition/ingredient/{ID}|
+|---|------|
+|GET|api.energyboostlab.com/workout/{ID}|
 
 #### 파라미터
-
 |파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
+|----|---|---|------|
 |테스트|테스트|Y|테스트|
 
 #### Request Example
 ```javascript
-GET /nutrition/ingredient/{ID}/ HTTP/1.1
+GET /workout/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -107,9 +101,8 @@ charset=UTF-8
 ```
 
 #### Return Code
-
 |구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
+|----|---|---|------|
 |성공|200|성공|OK|
 |실패|401|권한 없음|API 사용 권한이 없습니다|
 ||403|비정상 접근|잘못된 요청입니다|
@@ -117,26 +110,24 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 음식 재료 생성
+### 운동 생성
 
 #### 설명
-음식 재료 생성 API 입니다.
+운동 생성 API 입니다.
 
 #### 요청 URL
-
 |HTTP 메서드|URL|
-|:---:|:------|
-|POST|api.energyboostlab.com/nutrition/ingredient/|
+|---|------|
+|POST|api.energyboostlab.com/workout/|
 
 #### 파라미터
-
 |파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
+|----|---|---|------|
 |테스트|테스트|Y|테스트|
 
 #### Request Example
 ```javascript
-POST /nutrition/ingredient/ HTTP/1.1
+POST /workout/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -156,9 +147,8 @@ charset=UTF-8
 ```
 
 #### Return Code
-
 |구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
+|----|---|---|------|
 |성공|200|성공|OK|
 |실패|401|권한 없음|API 사용 권한이 없습니다|
 ||403|비정상 접근|잘못된 요청입니다|
@@ -166,26 +156,24 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 음식 재료 수정
+### 운동 수정
 
 #### 설명
-음식 재료 수정 API 입니다.
+운동 수정 API 입니다.
 
 #### 요청 URL
-
 |HTTP 메서드|URL|
-|:---:|:------|
-|PUT|api.energyboostlab.com/nutrition/ingredient/{ID}|
+|---|------|
+|PUT|api.energyboostlab.com/workout/{ID}|
 
 #### 파라미터
-
 |파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
+|----|---|---|------|
 |테스트|테스트|Y|테스트|
 
 #### Request Example
 ```javascript
-PUT /nutrition/ingredient/{ID}/ HTTP/1.1
+PUT /workout/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -205,9 +193,8 @@ charset=UTF-8
 ```
 
 #### Return Code
-
 |구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
+|----|---|---|------|
 |성공|200|성공|OK|
 |실패|401|권한 없음|API 사용 권한이 없습니다|
 ||403|비정상 접근|잘못된 요청입니다|
@@ -215,26 +202,24 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 음식 재료 삭제
+### 운동 삭제
 
 #### 설명
-음식 재료 리스트 조회 API 입니다.
+운동 리스트 조회 API 입니다.
 
 #### 요청 URL
-
 |HTTP 메서드|URL|
-|:---:|:------|
-|DELETE|api.energyboostlab.com/nutrition/ingredient/{ID}/|
+|---|------|
+|DELETE|api.energyboostlab.com/workout/{ID}/|
 
 #### 파라미터
-
 |파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
+|----|---|---|------|
 |테스트|테스트|Y|테스트|
 
 #### Request Example
 ```javascript
-DELETE /nutrition/ingredient/{ID}/ HTTP/1.1
+DELETE /workout/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -254,9 +239,8 @@ charset=UTF-8
 ```
 
 #### Return Code
-
 |구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
+|----|---|---|------|
 |성공|200|성공|OK|
 |실패|401|권한 없음|API 사용 권한이 없습니다|
 ||403|비정상 접근|잘못된 요청입니다|

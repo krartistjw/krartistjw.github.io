@@ -1,6 +1,5 @@
 ---
 layout: default
-parent: EnergyboostAPI
 title: NutritionAPI
 has_children: true
 nav_order: 41

@@ -1,12 +1,11 @@
 ---
 layout: default
-grand_parent: EnergyboostAPI
-parent: NutritionAPI
-title: Food
-nav_order: 1
+parent: WorkoutAPI
+title: Workout
+nav_order: 2
 ---
 
-# 음식 API
+# 운동 API
 
 ## 개요
 
@@ -18,18 +17,18 @@ nav_order: 1
 3. API 요청
 
 
-## 음식 API 레퍼런스
+## 운동 API 레퍼런스
 
-### 음식 리스트 조회
+### 운동 리스트 조회
 
 #### 설명
-음식 리스트 조회 API 입니다.
+운동 리스트 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|GET|api.energyboostlab.com/nutrition/food/|
+|GET|api.energyboostlab.com/workout/|
 
 #### 파라미터
 
@@ -39,7 +38,7 @@ nav_order: 1
 
 #### Request Example
 ```javascript
-GET /nutrition/food/ HTTP/1.1
+GET /workout/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -68,16 +67,16 @@ charset=UTF-8
 ||404|존재하지 않은 요청|존재하지 않은 요청입니다|
 ||500|시스템 에러|테스트|
 
-### 음식 상세 조회
+### 운동 상세 조회
 
 #### 설명
-음식 상세 조회 API 입니다.
+운동 상세 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|GET|api.energyboostlab.com/nutrition/food/{ID}|
+|GET|api.energyboostlab.com/workout/{ID}|
 
 #### 파라미터
 
@@ -87,7 +86,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-GET /nutrition/food/{ID}/ HTTP/1.1
+GET /workout/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -117,16 +116,16 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 음식 생성
+### 운동 생성
 
 #### 설명
-음식 생성 API 입니다.
+운동 생성 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|POST|api.energyboostlab.com/nutrition/food/|
+|POST|api.energyboostlab.com/workout/|
 
 #### 파라미터
 
@@ -136,7 +135,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-POST /nutrition/food/ HTTP/1.1
+POST /workout/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -166,16 +165,16 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 음식 수정
+### 운동 수정
 
 #### 설명
-음식 수정 API 입니다.
+운동 수정 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|PUT|api.energyboostlab.com/nutrition/food/{ID}|
+|PUT|api.energyboostlab.com/workout/{ID}|
 
 #### 파라미터
 
@@ -185,7 +184,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-PUT /nutrition/food/{ID}/ HTTP/1.1
+PUT /workout/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -215,16 +214,16 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 음식 삭제
+### 운동 삭제
 
 #### 설명
-음식 리스트 조회 API 입니다.
+운동 리스트 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|DELETE|api.energyboostlab.com/nutrition/food/{ID}/|
+|DELETE|api.energyboostlab.com/workout/{ID}/|
 
 #### 파라미터
 
@@ -234,7 +233,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-DELETE /nutrition/food/{ID}/ HTTP/1.1
+DELETE /workout/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}

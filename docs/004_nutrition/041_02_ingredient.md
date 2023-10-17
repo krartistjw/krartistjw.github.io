@@ -1,216 +1,59 @@
 ---
 layout: default
-grand_parent: EnergyboostAPI
-parent: UserAPI
-title: User
-nav_order: 1
+parent: NutritionAPI
+title: Ingredient
+nav_order: 2
 ---
 
-# 사용자 API
+# 음식 재료 API
 
 ## 개요
 
 
 ## 사전 준비 사항
 1.  회원 가입
-1.  로그인
-    1. 로그인 시 발행되는 **access token key**를 헤더에 X-CSRFToken 값을 설정
-1. API 요청
+2.  로그인
+    1.  로그인 시 발행되는 **access token key**를 헤더에 X-CSRFToken 값을 설정
+3. API 요청
 
 
-## 사용자 API 레퍼런스
+## 음식 재료 API 레퍼런스
 
-### 사용자 회원가입
+### 음식 재료 리스트 조회
 
 #### 설명
-사용자 회원가입 API 입니다.
+음식 재료 리스트 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|POST|api.energyboostlab.com/users/signup/|
+|GET|api.energyboostlab.com/nutrition/ingredient/|
 
 #### 파라미터
 
 |파라미터|타입|필수여부|설명|
 |:----:|:---:|:---:|:------|
-|name|string|Y|이름|
-|email|string|Y|이메일|
-|password1|string|Y|비밀번호|
-|password2|string|Y|비밀번호 확인|
-|mobile|string|Y|휴대전화|
-|date_of_birth|string|Y|생년월일(YYYY-MM-DD)|
-|gender|string|Y|성별(male: 남자, female: 여자)|
-
-#### Request Example
-
-```javascript
-POST /users/signup/ HTTP/1.1
-Host: api.energyboostlab.com
-Content-Type: application/json
-{
-    "name": "energy",
-    "email": "energy@energyboostlab.com",
-    "password1": "Boost100%",
-    "password2": "Boost100%",
-    "mobile": "01012345678",
-    "date_of_birth": "1990-01-01",
-    "gender": "male"
-}
-```
-
-#### Response Example
-```javascript
-{
-    "access": "{{ACCESS_TOKEN}}",
-    "refresh": "{{REFRESH_TOKEN}}",
-    "user": {
-        "pk": 8,
-        "email": "energy@energyboostlab.com"
-    }
-}
-```
-
-#### Return Code
-
-|구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
-|성공|201|성공|OK|
-|실패|401|권한 없음|API 사용 권한이 없습니다|
-||403|비정상 접근|잘못된 요청입니다|
-||404|존재하지 않은 요청|존재하지 않은 요청입니다|
-||500|시스템 에러|테스트|
-
-### 사용자 로그인
-
-#### 설명
-사용자 로그인 API 입니다.
-
-#### 요청 URL
-
-|HTTP 메서드|URL|
-|:---:|:------|
-|POST|api.energyboostlab.com/users/login/|
-
-#### 파라미터
-
-|파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
-|email|string|Y|이메일|
-|password|string|Y|비밀번호|
+|테스트|테스트|Y|테스트|
 
 #### Request Example
 ```javascript
-POST /users/login/ HTTP/1.1
-Host: api.energyboostlab.com
-Content-Type: application/json
-{
-    "email":"energy@energyboostlab.com",
-    "password":"Boost100%"
-}
-```
-
-#### Response Example
-```javascript
-{
-    "access": "{{ACCESS_TOKEN}}",
-    "refresh": "{{REFRESH_TOKEN}}",
-    "user": {
-        "pk": 8,
-        "email": "energy@energyboostlab.com"
-    }
-}
-```
-
-#### Return Code
-
-|구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
-|성공|200|성공|OK|
-|실패|401|권한 없음|API 사용 권한이 없습니다|
-||403|비정상 접근|잘못된 요청입니다|
-||404|존재하지 않은 요청|존재하지 않은 요청입니다|
-||500|시스템 에러|테스트|
-
-
-### 사용자 로그아웃
-
-#### 설명
-사용자 로그아웃 API 입니다.
-
-#### 요청 URL
-
-|HTTP 메서드|URL|
-|:---:|:------|
-|POST|api.energyboostlab.com/users/logout|
-
-#### 파라미터
-
-|파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
-|없음|
-
-#### Request Example
-```javascript
-POST /users/logout/ HTTP/1.1
-Host: api.energyboostlab.com
-Content-Type: application/json
-Authorization: Bearer {ACCESS_TOKEN}
-```
-
-#### Response Example
-```javascript
-{
-    "detail": "Successfully logged out."
-}
-```
-
-#### Return Code
-
-|구분|코드|내용|설명|
-|:----:|:---:|:---:|------|
-|성공|200|성공|OK|
-|실패|401|권한 없음|API 사용 권한이 없습니다|
-||403|비정상 접근|잘못된 요청입니다|
-||404|존재하지 않은 요청|존재하지 않은 요청입니다|
-||500|시스템 에러|테스트|
-
-
-### 사용자 비밀번호 변경
-
-#### 설명
-사용자 비밀번호 변경 API 입니다.
-
-#### 요청 URL
-
-|HTTP 메서드|URL|
-|:---:|:------|
-|POST|api.energyboostlab.com/users/password/change/|
-
-#### 파라미터
-
-|파라미터|타입|필수여부|설명|
-|:----:|:---:|:---:|:------|
-|new_password1|string|Y|비밀번호|
-|new_password2|string|Y|비밀번호 확인|
-
-#### Request Example
-```javascript
-POST /users/password/change/ HTTP/1.1
+GET /nutrition/ingredient/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
 {
-    "new_password1":"Energy1000%",
-    "new_password2":"Energy1000%"
+
 }
 ```
 
 #### Response Example
 ```javascript
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+charset=UTF-8
 {
-    "detail": "New password has been saved."
+
 }
 ```
 
@@ -223,4 +66,200 @@ Authorization: Bearer {ACCESS_TOKEN}
 ||403|비정상 접근|잘못된 요청입니다|
 ||404|존재하지 않은 요청|존재하지 않은 요청입니다|
 ||500|시스템 에러|테스트|
+
+### 음식 재료 상세 조회
+
+#### 설명
+음식 재료 상세 조회 API 입니다.
+
+#### 요청 URL
+
+|HTTP 메서드|URL|
+|:---:|:------|
+|GET|api.energyboostlab.com/nutrition/ingredient/{ID}|
+
+#### 파라미터
+
+|파라미터|타입|필수여부|설명|
+|:----:|:---:|:---:|:------|
+|테스트|테스트|Y|테스트|
+
+#### Request Example
+```javascript
+GET /nutrition/ingredient/{ID}/ HTTP/1.1
+Host: api.energyboostlab.com
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+{
+
+}
+```
+
+#### Response Example
+```javascript
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN};
+charset=UTF-8
+{
+
+}
+```
+
+#### Return Code
+
+|구분|코드|내용|설명|
+|:----:|:---:|:---:|------|
+|성공|200|성공|OK|
+|실패|401|권한 없음|API 사용 권한이 없습니다|
+||403|비정상 접근|잘못된 요청입니다|
+||404|존재하지 않은 요청|존재하지 않은 요청입니다|
+||500|시스템 에러|테스트|
+
+
+### 음식 재료 생성
+
+#### 설명
+음식 재료 생성 API 입니다.
+
+#### 요청 URL
+
+|HTTP 메서드|URL|
+|:---:|:------|
+|POST|api.energyboostlab.com/nutrition/ingredient/|
+
+#### 파라미터
+
+|파라미터|타입|필수여부|설명|
+|:----:|:---:|:---:|:------|
+|테스트|테스트|Y|테스트|
+
+#### Request Example
+```javascript
+POST /nutrition/ingredient/ HTTP/1.1
+Host: api.energyboostlab.com
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+{
+
+}
+```
+
+#### Response Example
+```javascript
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+charset=UTF-8
+{
+
+}
+```
+
+#### Return Code
+
+|구분|코드|내용|설명|
+|:----:|:---:|:---:|------|
+|성공|200|성공|OK|
+|실패|401|권한 없음|API 사용 권한이 없습니다|
+||403|비정상 접근|잘못된 요청입니다|
+||404|존재하지 않은 요청|존재하지 않은 요청입니다|
+||500|시스템 에러|테스트|
+
+
+### 음식 재료 수정
+
+#### 설명
+음식 재료 수정 API 입니다.
+
+#### 요청 URL
+
+|HTTP 메서드|URL|
+|:---:|:------|
+|PUT|api.energyboostlab.com/nutrition/ingredient/{ID}|
+
+#### 파라미터
+
+|파라미터|타입|필수여부|설명|
+|:----:|:---:|:---:|:------|
+|테스트|테스트|Y|테스트|
+
+#### Request Example
+```javascript
+PUT /nutrition/ingredient/{ID}/ HTTP/1.1
+Host: api.energyboostlab.com
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+{
+
+}
+```
+
+#### Response Example
+```javascript
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+charset=UTF-8
+{
+
+}
+```
+
+#### Return Code
+
+|구분|코드|내용|설명|
+|:----:|:---:|:---:|------|
+|성공|200|성공|OK|
+|실패|401|권한 없음|API 사용 권한이 없습니다|
+||403|비정상 접근|잘못된 요청입니다|
+||404|존재하지 않은 요청|존재하지 않은 요청입니다|
+||500|시스템 에러|테스트|
+
+
+### 음식 재료 삭제
+
+#### 설명
+음식 재료 리스트 조회 API 입니다.
+
+#### 요청 URL
+
+|HTTP 메서드|URL|
+|:---:|:------|
+|DELETE|api.energyboostlab.com/nutrition/ingredient/{ID}/|
+
+#### 파라미터
+
+|파라미터|타입|필수여부|설명|
+|:----:|:---:|:---:|:------|
+|테스트|테스트|Y|테스트|
+
+#### Request Example
+```javascript
+DELETE /nutrition/ingredient/{ID}/ HTTP/1.1
+Host: api.energyboostlab.com
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+{
+
+}
+```
+
+#### Response Example
+```javascript
+Content-Type: application/json
+Authorization: Bearer {ACCESS_TOKEN}
+charset=UTF-8
+{
+
+}
+```
+
+#### Return Code
+
+|구분|코드|내용|설명|
+|:----:|:---:|:---:|------|
+|성공|200|성공|OK|
+|실패|401|권한 없음|API 사용 권한이 없습니다|
+||403|비정상 접근|잘못된 요청입니다|
+||404|존재하지 않은 요청|존재하지 않은 요청입니다|
+||500|시스템 에러|테스트|
+
 

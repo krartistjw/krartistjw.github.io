@@ -1,9 +1,8 @@
 ---
 layout: default
-parent: EnergyboostAPI
 title: 연동흐름도
 has_children: false
-nav_order: 11
+nav_order: 21
 ---
 
 # 연동흐름도

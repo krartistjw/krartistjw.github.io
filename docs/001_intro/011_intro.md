@@ -1,9 +1,9 @@
 ---
 layout: default
-title: EnergyboostAPI
-has_children: true
+title: intro
+has_children: false
 nav_order: 11
-permalink: /docs/energyboost
+permalink: /docs/intro
 ---
 
 # Energyboost API

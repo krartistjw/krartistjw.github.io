@@ -1,12 +1,11 @@
 ---
 layout: default
-grand_parent: EnergyboostAPI
-parent: WorkoutAPI
-title: Activity
-nav_order: 4
+parent: NutritionAPI
+title: FoodCourse
+nav_order: 3
 ---
 
-# 운동 활동 기록 API
+# 음식 코스 API
 
 ## 개요
 
@@ -18,19 +17,18 @@ nav_order: 4
 3. API 요청
 
 
-## 운동 활동 기록 API 레퍼런스
+## 음식 코스 API 레퍼런스
 
-### 운동 활동 기록 리스트 조회
+### 음식 코스 리스트 조회
 
 #### 설명
-운동 활동 기록 리스트 조회 API 입니다.
+음식 코스 리스트 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
-|:---|:------|
-|GET|api.energyboostlab.com/workout/activity/|
-
+|:---:|:------|
+|GET|api.energyboostlab.com/nutrition/course/|
 
 #### 파라미터
 
@@ -40,7 +38,7 @@ nav_order: 4
 
 #### Request Example
 ```javascript
-GET /workout/activity/ HTTP/1.1
+GET /nutrition/course/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -69,16 +67,16 @@ charset=UTF-8
 ||404|존재하지 않은 요청|존재하지 않은 요청입니다|
 ||500|시스템 에러|테스트|
 
-### 운동 활동 기록 상세 조회
+### 음식 코스 상세 조회
 
 #### 설명
-운동 활동 기록 상세 조회 API 입니다.
+음식 코스 상세 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|GET|api.energyboostlab.com/workout/activity/{ID}|
+|GET|api.energyboostlab.com/nutrition/course/{ID}|
 
 #### 파라미터
 
@@ -88,7 +86,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-GET /workout/activity/{ID}/ HTTP/1.1
+GET /nutrition/course/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -118,16 +116,16 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 운동 활동 기록 생성
+### 음식 코스 생성
 
 #### 설명
-운동 활동 기록 생성 API 입니다.
+음식 코스 생성 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|POST|api.energyboostlab.com/workout/activity/|
+|POST|api.energyboostlab.com/nutrition/course/|
 
 #### 파라미터
 
@@ -137,7 +135,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-POST /workout/activity/ HTTP/1.1
+POST /nutrition/course/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -167,16 +165,16 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 운동 활동 기록 수정
+### 음식 코스 수정
 
 #### 설명
-운동 활동 기록 수정 API 입니다.
+음식 코스 수정 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|PUT|api.energyboostlab.com/workout/activity/{ID}|
+|PUT|api.energyboostlab.com/nutrition/course/{ID}|
 
 #### 파라미터
 
@@ -186,7 +184,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-PUT /workout/activity/{ID}/ HTTP/1.1
+PUT /nutrition/course/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}
@@ -216,16 +214,16 @@ charset=UTF-8
 ||500|시스템 에러|테스트|
 
 
-### 운동 활동 기록 삭제
+### 음식 코스 삭제
 
 #### 설명
-운동 활동 기록 리스트 조회 API 입니다.
+음식 코스 리스트 조회 API 입니다.
 
 #### 요청 URL
 
 |HTTP 메서드|URL|
 |:---:|:------|
-|DELETE|api.energyboostlab.com/workout/activity/{ID}/|
+|DELETE|api.energyboostlab.com/nutrition/course/{ID}/|
 
 #### 파라미터
 
@@ -235,7 +233,7 @@ charset=UTF-8
 
 #### Request Example
 ```javascript
-DELETE /workout/activity/{ID}/ HTTP/1.1
+DELETE /nutrition/course/{ID}/ HTTP/1.1
 Host: api.energyboostlab.com
 Content-Type: application/json
 Authorization: Bearer {ACCESS_TOKEN}

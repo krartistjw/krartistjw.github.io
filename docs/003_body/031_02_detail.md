@@ -1,6 +1,5 @@
 ---
 layout: default
-grand_parent: EnergyboostAPI
 parent: BodyAPI
 title: BodyDetail
 nav_order: 2
