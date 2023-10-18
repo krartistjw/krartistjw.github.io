@@ -19,10 +19,7 @@ permalink: /
 [EnergyboostLab API](http://api.energyboostlab.com)
 
 ## API Docs
-[EnergyboostLab API](https://krartistjw.github.io/docs/energyboost)
-
-## Github
-[krartistjw](https://github.com/krartistjw)
+[EnergyboostLab API](http://docs.energyboostlab.com/)
 
 ## Jenkins(CI/CD)
 [Jenkins](http://jenkins.energyboostlab.com)
