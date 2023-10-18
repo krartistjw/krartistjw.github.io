@@ -18,9 +18,6 @@ permalink: /
 ## API Server
 [EnergyboostLab API](http://api.energyboostlab.com)
 
-## API Docs
-[EnergyboostLab API](http://docs.energyboostlab.com/)
-
 ## Jenkins(CI/CD)
 [Jenkins](http://jenkins.energyboostlab.com)
 
