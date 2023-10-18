@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 연동흐름도
+title: Service Flow
 has_children: false
 nav_order: 21
 ---
