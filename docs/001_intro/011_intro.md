@@ -1,6 +1,6 @@
 ---
 layout: default
-title: intro
+title: Intro
 has_children: false
 nav_order: 11
 permalink: /docs/intro
