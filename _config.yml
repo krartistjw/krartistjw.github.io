@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: EnergyboostLab API Docs
-description: EnergyboostLab API Docs
+title: EnergyboostLab Developers
+description: EnergyboostLab API Developers
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://docs.energyboostlab.com/"
+url: "http://developers.energyboostlab.com/"
 
 permalink: pretty
 
@@ -52,10 +52,10 @@ search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
-  heading_level: 2
+  heading_level: 3
   # Maximum amount of previews per search result
   # Default: 3
-  previews: 2
+  previews: 3
   # Maximum amount of words to display before a matched word in the preview
   # Default: 5
   preview_words_before: 3

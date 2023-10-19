@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Dashboard
-nav_order: 1
+nav_exclude: true
 description: "EnergyboostLab API Docs"
 permalink: /
 ---
